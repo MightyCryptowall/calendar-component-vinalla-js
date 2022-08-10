@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendar Component With Vinalla JS</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="calenader-box">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calendar Component With Vinalla JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button type="button" class="calendar-input-container" >
+      <div class="calendar-input-display" onclick="window.calendarComponent.init(event)">
+        Start Date
+      </div>
+      <input class="d-none" type="date" name="startDate" id="">
+      <div class="calendar-box calendar-box-days">
+        <div class="month-n-year">April 2022</div>
+        <ul class="days-header">
+          <li>S</li>
+          <li>M</li>
+          <li>T</li>
+          <li>W</li>
+          <li>T</li>
+          <li>F</li>
+          <li>S</li>
+        </ul>
+        <ul class="days-body"></ul>
+      </div>
+      <div class="calendar-box calendar-box-month-n-year d-none">
+        <div class="month-n-year">Choose Date</div>
+        <div class="choose-month-n-year">
+          <div class="choose-month">
+            <i class="fa fa-chevron-up"></i>
+            April
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="choose-year">
+            <i class="fa fa-chevron-up"></i>
+            2022
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </button>
 
-  </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
