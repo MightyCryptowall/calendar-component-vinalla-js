@@ -1,0 +1,13 @@
+{
+  "name": "calendar-component-vinalla-js",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Ye Thiha",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
